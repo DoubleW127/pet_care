@@ -374,6 +374,75 @@ section {
   font-weight: 900;
 }
 
+.location-band {
+  background: #fffdf8;
+}
+
+.location {
+  display: grid;
+  grid-template-columns: 0.72fr 1.28fr;
+  gap: 38px;
+  max-width: 1180px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.location-copy h2 {
+  margin: 0 0 18px;
+  font-size: clamp(32px, 4vw, 52px);
+  line-height: 1.12;
+  letter-spacing: 0;
+}
+
+.location-copy p {
+  margin: 0 0 24px;
+  color: var(--muted);
+  font-size: 17px;
+}
+
+.location-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.location-tags span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 0 14px;
+  color: var(--mint-dark);
+  background: #e8f8f4;
+  border: 1px solid rgba(47, 141, 127, 0.14);
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.map-card {
+  margin: 0;
+  overflow: hidden;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.map-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.map-card figcaption {
+  padding: 14px 18px;
+  color: #405055;
+  background: #fff;
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+  font-weight: 700;
+}
+
 .booking {
   display: grid;
   grid-template-columns: 0.92fr 1.08fr;
@@ -479,6 +548,7 @@ footer {
   }
 
   .prices,
+  .location,
   .booking {
     grid-template-columns: 1fr;
   }

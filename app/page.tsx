@@ -62,6 +62,7 @@ export default function Home() {
           <a href="#services">服务</a>
           <a href="#process">流程</a>
           <a href="#prices">价格</a>
+          <a href="#location">位置</a>
           <a href="#booking">预约</a>
         </nav>
         <a className="button" href="#booking">
@@ -165,6 +166,30 @@ export default function Home() {
                 </ul>
               </article>
             ))}
+          </div>
+        </section>
+
+        <section id="location" className="location-band">
+          <div className="location">
+            <div className="location-copy">
+              <span className="eyebrow">到店路线</span>
+              <h2>上海市宠爱路 188 号 1 层</h2>
+              <p>
+                门店在一层临街位置，接送宠物更方便。到店前可以先电话确认时段，我们会提前准备好洗护工位。
+              </p>
+              <div className="location-tags" aria-label="门店位置特点">
+                <span>临街一层</span>
+                <span>预约优先</span>
+                <span>宠物友好</span>
+              </div>
+            </div>
+            <figure className="map-card">
+              <img
+                src="/assets/pet-location-map.png"
+                alt="上海市宠爱路 188 号 1 层的可爱插画地图"
+              />
+              <figcaption>泡泡爪宠物洗护 · 上海市宠爱路 188 号 1 层</figcaption>
+            </figure>
           </div>
         </section>
 
