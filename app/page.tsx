@@ -237,6 +237,10 @@ export default function Home() {
                 </select>
               </div>
               <div className="field">
+                <label htmlFor="arrivalTime">期望到店时间</label>
+                <input id="arrivalTime" name="arrivalTime" type="datetime-local" />
+              </div>
+              <div className="field">
                 <label htmlFor="note">备注</label>
                 <textarea
                   id="note"
